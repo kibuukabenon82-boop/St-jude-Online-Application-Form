@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St Jude High School Busiika</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-badge">
+            <img src="images/Screenshot 2026-10-14 163048.png" alt="School badge" />
+          </div>
+          <div>
+            <strong>St Jude</strong>
+            <small>High School Busiika</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#admissions">Admissions</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="nav-button" href="#admissions">Apply now</a>
+      </header>
+
+      <main class="hero">
+        <section class="hero-copy" id="about">
+          <p class="eyebrow">Admissions Open 2026</p>
+          <h1>Welcome to a brighter future for your child.</h1>
+          <p class="lead">
+            At St Jude High School Busiika, we nurture confident learners,
+            responsible citizens, and future leaders through quality education and
+            strong Christian values.
+          </p>
+
+          <div class="cta-row">
+            <a class="primary-btn" href="#admissions">Apply online</a>
+            <a class="secondary-btn" href="#contact">Book a visit</a>
+          </div>
+
+          <ul class="stats" aria-label="School highlights">
+            <li><strong>15+</strong><span>Years of excellence</span></li>
+            <li><strong>850+</strong><span>Students inspired</span></li>
+            <li><strong>98%</strong><span>Parent satisfaction</span></li>
+          </ul>
+        </section>
+
+        <section class="hero-visual" aria-label="School building image">
+          <div class="image-card">
+            <img src="images/Screenshot 2026-10-14 163048.png" alt="St Jude school building" />
+            <div class="floating-chip">Trusted by families</div>
+          </div>
+        </section>
+      </main>
+
+      <section class="application-panel" id="admissions">
+        <div class="panel-header">
+          <p>Online application</p>
+          <h2>St Jude High School Busiika Application Form</h2>
+        </div>
+
+        <form id="applicationForm" class="application-form">
+          <div class="form-grid">
+            <label>
+              Student name
+              <input type="text" name="studentName" placeholder="Enter full name" />
+            </label>
+
+            <label>
+              Date of birth
+              <input type="date" name="dateOfBirth" />
+            </label>
+
+            <label>
+              Parent/Guardian
+              <input type="text" name="parentGuardian" placeholder="Parent or guardian name" />
+            </label>
+
+            <label>
+              Contact phone
+              <input type="tel" name="contactPhone" placeholder="+256 ..." />
+            </label>
+
+            <label>
+              Email address
+              <input type="email" name="emailAddress" placeholder="name@example.com" />
+            </label>
+
+            <label>
+              Gender
+              <select name="gender">
+                <option value="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+
+            <label>
+              Class applying for
+              <select name="classApplyingFor">
+                <option value="">Select class</option>
+                <option value="Senior One">Senior One</option>
+                <option value="Senior Two">Senior Two</option>
+                <option value="Senior Three">Senior Three</option>
+                <option value="Senior Four">Senior Four</option>
+              </select>
+            </label>
+
+            <label>
+              Residence
+              <input type="text" name="residence" placeholder="Town or village" />
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit application</button>
+          <div id="formMessage" class="form-message" aria-live="polite"></div>
+        </form>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
